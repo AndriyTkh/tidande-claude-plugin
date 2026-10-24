@@ -1,0 +1,14 @@
+{
+  "name": "tidande",
+  "owner": {
+    "name": "Tidande"
+  },
+  "description": "The Tidande plugin for Claude: the Tidande connector and the research skills.",
+  "plugins": [
+    {
+      "name": "tidande",
+      "source": "./",
+      "description": "Connects Claude to Tidande with your own Tidande access, plus research skills."
+    }
+  ]
+}

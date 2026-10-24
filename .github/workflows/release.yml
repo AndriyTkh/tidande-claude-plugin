@@ -1,0 +1,43 @@
+# The PUBLIC repository's release workflow (copied there by the private repository's
+# claude-plugin-release workflow; this folder is the only extra file the public repository gets).
+# When a version tag (tidande--v<version>) is pushed: zip the installed files (no evals, no
+# marketplace file, no workflows) and attach the zip to a release, for people who upload it in the
+# Claude app. This repository holds the plugin only, never Tidande's code.
+name: release
+
+on:
+  push:
+    tags: ["tidande--v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Zip and release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ github.ref_name }}
+        run: |
+          if gh release view "$TAG" >/dev/null 2>&1; then echo "$TAG is released already"; exit 0; fi
+          v="${TAG#tidande--v}"
+          git ls-files | grep -v -e '^evals/' -e '^\.github/' -e '^\.claude-plugin/marketplace\.json$' \
+            | sort | TZ=UTC zip -X -q "tidande-claude-plugin-$v.zip" -@
+          gh release create "$TAG" "tidande-claude-plugin-$v.zip" --title "Tidande for Claude $v" --notes "$(cat <<'EOF'
+          **Claude Code:**
+
+          ```
+          claude plugin marketplace add https://github.com/${{ github.repository }}.git
+          claude plugin install tidande@tidande
+          ```
+
+          Then type /mcp in Claude Code, choose tidande, Authenticate.
+
+          **Claude app:** download the zip below, then Customize, Plugins, Upload plugin; then Connectors, Tidande, Connect.
+
+          The first time, Claude asks you to sign in to Tidande with Google and to click Allow. Claude then sees exactly what you can see in Tidande, nothing more. Access is by invitation.
+          EOF
+          )"

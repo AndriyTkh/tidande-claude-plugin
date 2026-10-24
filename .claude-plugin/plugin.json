@@ -1,0 +1,11 @@
+{
+  "name": "tidande",
+  "displayName": "Tidande",
+  "version": "0.1.0",
+  "description": "Tidande для Claude: пошук у новинах і Telegram-каналах, реєстри компаній і закупівель, ваші розслідування з перевіреними цитатами. Connects Claude to Tidande with your own Tidande access; sign in with Google once when Claude asks.",
+  "author": {
+    "name": "Tidande"
+  },
+  "homepage": "https://tidande-workspace-1060294906195.europe-central2.run.app/connect/guide",
+  "keywords": ["tidande", "journalism", "research", "osint", "ukraine"]
+}

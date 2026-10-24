@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "tidande": {
+      "type": "http",
+      "url": "https://tidande-mcp-1060294906195.europe-central2.run.app/mcp"
+    }
+  }
+}
