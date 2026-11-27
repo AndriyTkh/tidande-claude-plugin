@@ -23,7 +23,7 @@ answer a gate for them and never pass `raise:` or a higher `level` yourself.
 
 Requests are loose: everyday names ("мер", "КМДА"), relative dates, no angle, typos, mixed
 languages. Do not ask the person to rephrase. Show one line, "Я розумію запит так: ...": subject
-(a public body, a company or a public-role person, never a private person), period (say where it
+(a public body, a company or a person a public source links to the case), period (say where it
 falls outside the corpus; the period is in the `search` coverage), angle (or "не вказано"), output
 (or "висновки з хронологією"). The journalist corrects it with a steering note.
 
@@ -47,7 +47,7 @@ Each direction card: `title`, `question` (journalist's language), `lens`, `hypot
 
 A working hypothesis about a public body or office-holder is allowed within five limits: internal;
 neutral; no verdict words (the Navigator refuses them); always beside the innocent `alternative`;
-never about a private person; never exported. Label it «робоча гіпотеза», an interpretation, a
+never about a minor; a person only with a public-source basis. Label it «робоча гіпотеза», an interpretation, a
 question to check. Three sentences at most. Declare each focal entity's `kind` honestly (`body`,
 `company`, `office_holder` with `public_role: true`, else `person`; `unknown` counts as `person`); a
 personal name anywhere in a card refuses the direction.

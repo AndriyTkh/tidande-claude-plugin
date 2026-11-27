@@ -50,7 +50,9 @@ agents run.
 ## 5. Gates (never worked around)
 
 - Spend: nothing new starts over the server's cap; only the journalist's own words raise it.
-- A private person: refused. Public bodies, companies and office-holders in their public role only.
+- People (ADR 0067): an adult is in scope when a public source links them to the case, and the link
+  shows its basis; a name-only match is a "possible match". Never a minor, a home address or health
+  data, nothing from a private chat or a leak.
 - Publishing, export or sharing: never yours.
 - Confirming a claim, or any verdict word (true, proven, false, guilty): never yours.
 

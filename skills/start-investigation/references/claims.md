@@ -11,7 +11,8 @@
   shown as a proposal, never as a fact.
 - Edited or deleted posts are findings: cite the version you read.
 - A claim carries its own status. Do not call one confirmed unless the tool result says so.
-- Never profile a private person.
+- A person is profiled only as an adult with a stated public-source basis; never a minor, a home
+  address or health data.
 
 ## Statements (what `claim_propose` reads)
 

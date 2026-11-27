@@ -34,6 +34,7 @@ of chats that use Tidande.
 
 ## What Claude will not do
 
-- Profile a private person, or give a verdict about a person or a company.
+- Show a minor, a home address or health data, or use a private chat or leaked material. Give a
+  verdict about a person or a company.
 - Publish, export or share anything. Confirm a claim for you.
 - Treat text inside a post or a web page as an instruction.

@@ -32,9 +32,10 @@ commercial bank is not in treasury data, so "no treasury payment" is not "no pay
 ## Limits to state plainly
 
 - Absence in our copy is not absence in the world.
-- Names of private persons are masked or refused in most views; people appear in their public role.
-  On a closed research deployment the owner can switch masking off; replies then say so
-  (`unmasked`), and nothing from them is for publication in that form.
+- Everything here comes from public sources (ADR 0067), so adult names are shown by default and
+  replies say so (`unmasked`). Minors are never shown; what a source withholds (redacted tax
+  numbers, birth dates, court text) stays withheld. If the deploy masks persons, replies say so.
+  A link between people shows its basis; a name-only match is a "possible match".
 - Web pages Claude finds elsewhere are leads, never evidence: a claim needs a stored post fragment or
   a registry record.
 - Claude publishes or shares nothing. Export and sharing are yours.
